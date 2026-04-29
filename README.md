@@ -141,7 +141,7 @@ The given `.github/copilot-instructions.md` file set up the project for the **De
 
    ![copilot skip step](images/09_askpromptback.png)
 
-8. You see the following project structure when the process is finished.
+9. You see the following project structure when the process is finished.
 
    ![project complete 1](images/10_complete_project.png)
 
