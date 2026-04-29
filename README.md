@@ -137,13 +137,17 @@ The given `.github/copilot-instructions.md` file set up the project for the **De
    
    ![Copilot CLI action completed](images/08_copilotcli_complete.png)
 
+8. Please note that sometimes Copilot may skip steps or become idle while running tasks; if this happens, send another prompt to continue.
+
+   ![copilot skip step](images/09_askpromptback.png)
+
 8. You see the following project structure when the process is finished.
 
-   ![project complete 1](images/09_complete_project.png)
+   ![project complete 1](images/10_complete_project.png)
 
-   ![project complete 2](images/10_complete_project2.png)
+   ![project complete 2](images/11_complete_project2.png)
 
-   ![project complete 3](images/11_complete_project3.png)
+   ![project complete 3](images/12_complete_project3.png)
 
 ---
 
@@ -153,7 +157,7 @@ After the automated setup finishes, review these project-specific items before y
 
 1. Add the correct copyright owner and year to `LICENSE.md` if you want to include a project-specific notice.
 
-  ![update project LICENSE.md](images/12_complete_project4.png)
+  ![update project LICENSE.md](images/13_complete_project4.png)
 
 
 2. Update this `README.md` so the title, overview, setup notes, and session guidance match your actual project.
@@ -169,6 +173,8 @@ After the automated setup finishes, review these project-specific items before y
 DataLib_Copilot/
 ├── .github/
 │   └── copilot-instructions.md   # Copilot setup guide (for VS Code Copilot Chat and Copilot CLI)
+├── .vscode/
+│   └── settings.json             # VS Code
 ├── .venv/                        # Python virtual environment (git-ignored)
 ├── notebook/
 │   ├── ld_notebook.ipynb         # Example Data Library for Python JupyterLab notebook
