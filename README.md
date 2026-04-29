@@ -18,9 +18,9 @@ The goal is to demonstrate that GitHub Copilot's agentic capabilities extend wel
 
 This project and the `.github/copilot-instructions.md` file were tested on Windows with the following Copilot models 
 
-- **Claude Sonnet 4.6**: Both Chat Extensions and Copilot CLI
+- **Claude Sonnet 4.6 and Opus 4.6**: Both Chat Extensions and Copilot CLI
 - **GPT-5.4**: Both Chat Extensions and Copilot CLI
-- **Auto Model selection**: Chat Extensions only
+- **Auto Model selection**: Both Chat Extensions and Copilot CLI
 
 If you use a different model, ask it to review and revise `.github/copilot-instructions.md` file *with your review*, then retest the instructions until it satisfies your requirements.
 
