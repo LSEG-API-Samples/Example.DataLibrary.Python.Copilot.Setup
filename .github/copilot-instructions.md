@@ -22,6 +22,8 @@ Before running setup commands, confirm the project structure should match this l
 /
 ├── .github/
 │   └── copilot-instructions.md
+├── .vscode/
+│   └── settings.json
 ├── .gitignore
 ├── LICENSE.md
 ├── Project_README.md
@@ -98,7 +100,15 @@ Notes:
      python3 -m pip freeze > requirements.txt
      ```
 
-6. Create the following file and folder structure under the project root:
+6. Create `.vscode/settings.json` with the following content:
+
+   ```json
+   {
+     "git.ignoreLimitWarning": true
+   }
+   ```
+
+7. Create the following file and folder structure under the project root:
 
    ```
    notebook/
@@ -106,7 +116,7 @@ Notes:
    └── lseg-data.config.json
    ```
 
-7. Create `lseg-data.config.json` inside `notebook` with the following content:
+8. Create `lseg-data.config.json` inside `notebook` with the following content:
 
    ```json
    {
