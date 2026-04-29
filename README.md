@@ -18,9 +18,9 @@ The goal is to demonstrate that GitHub Copilot's agentic capabilities extend wel
 
 This project and the `.github/copilot-instructions.md` file were tested on Windows with the following Copilot models 
 
-- **Claude Sonnet 4.6 and Opus 4.6**: Both Chat Extensions and Copilot CLI
+- **Claude Sonnet 4.6**: Both Chat Extensions and Copilot CLI
+- **Claude Opus 4.6**: Both Chat Extensions and Copilot CLI
 - **GPT-5.4**: Both Chat Extensions and Copilot CLI
-- **Auto Model selection**: Both Chat Extensions and Copilot CLI
 
 If you use a different model, ask it to review and revise `.github/copilot-instructions.md` file *with your review*, then retest the instructions until it satisfies your requirements.
 
@@ -101,23 +101,23 @@ The given `.github/copilot-instructions.md` file set up the project for the **De
 
 5. Run the setup prompt:
 
-   ```
+   ```bash
    run all tasks in my copilot-instructions.md file
    ```
 
    *GitHub Copilot Chat* examples
 
-   ![GitHub Copilot Chat](images/01_copilotchat.png)
+   ![GitHub Copilot Chat](images/06_copilotchat_prompt.png)
 
 6. Review each Copilot request step **with caution**. Different models and run times may prompt you for request messages differently — click Approve/Allow only when you are satisfied the action is appropriate to proceed.
 
    *GitHub Copilot Chat* example
 
-   ![GitHCopilot Chat action request](images/03_copilotchat_process.png)
+   ![GitHCopilot Chat action request](images/07_copilotchat_process.png)
 
    *Copilot CLI* example
 
-   ![Copilot CLI action request](images/06_copilotcli_process.png)
+   ![Copilot CLI action request](images/08_copilotcli_process.png)
 
     Copilot then performs the following tasks based on the `.github\copilot-instructions.md` markdown file:
     - Create a `.venv` Python virtual environment
@@ -131,23 +131,21 @@ The given `.github/copilot-instructions.md` file set up the project for the **De
 
    *GitHub Copilot Chat* example
 
-   ![GitHCopilot Chat action completed](images/07_githubchat_complete.png)
+   ![GitHCopilot Chat action completed](images/09_githubchat_complete.png)
 
    *Copilot CLI* example
    
-   ![Copilot CLI action completed](images/08_copilotcli_complete.png)
+   ![Copilot CLI action completed](images/10_copilotcli_complete.png)
 
-8. Please note that sometimes Copilot may skip steps or become idle while running tasks; if this happens, send another prompt to continue.
+8. Please note that sometimes Copilot may skip steps or become idle while running tasks; if this happens, send another prompt to make it continues tasks.
 
-   ![copilot skip step](images/09_askpromptback.png)
+   ![copilot skip step](images/11_askpromptback.png)
 
 9. You see the following project structure when the process is finished.
 
-   ![project complete 1](images/10_complete_project.png)
+   ![project complete 1](images/12_complete_project.png)
 
-   ![project complete 2](images/11_complete_project2.png)
-
-   ![project complete 3](images/12_complete_project3.png)
+   ![project complete 2](images/13_complete_project2.png)
 
 ---
 
@@ -157,7 +155,7 @@ After the automated setup finishes, review these project-specific items before y
 
 1. Add the correct copyright owner and year to `LICENSE.md` if you want to include a project-specific notice.
 
-  ![update project LICENSE.md](images/13_complete_project4.png)
+  ![update project LICENSE.md](images/14_complete_project4.png)
 
 
 2. Update this `README.md` so the title, overview, setup notes, and session guidance match your actual project.
@@ -174,7 +172,7 @@ DataLib_Copilot/
 ├── .github/
 │   └── copilot-instructions.md   # Copilot setup guide (for VS Code Copilot Chat and Copilot CLI)
 ├── .vscode/
-│   └── settings.json             # VS Code
+│   └── settings.json             # VS Code setting
 ├── .venv/                        # Python virtual environment (git-ignored)
 ├── notebook/
 │   ├── ld_notebook.ipynb         # Example Data Library for Python JupyterLab notebook

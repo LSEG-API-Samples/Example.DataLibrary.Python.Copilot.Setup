@@ -169,8 +169,10 @@ Run all cells in `notebook/ld_notebook.ipynb` non-interactively using `jupyter n
 
 - **Windows (PowerShell/CMD):**
   ```powershell
-  .\.venv\Scripts\jupyter.exe nbconvert --to notebook --execute notebook/ld_notebook.ipynb --output-dir notebook
+  python -c "import asyncio; asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy()); from nbconvert.preprocessors import ExecutePreprocessor; import nbformat; nb = nbformat.read('notebook/ld_notebook.ipynb', as_version=4); ep = ExecutePreprocessor(timeout=120, kernel_name='python3'); ep.preprocess(nb, {'metadata': {'path': 'notebook/'}}); nbformat.write(nb, 'notebook/ld_notebook.ipynb')"
   ```
+  > **Note:** On Windows, running `jupyter.exe nbconvert --execute` directly can corrupt notebook output due to the default `ProactorEventLoop`. The command above switches to `WindowsSelectorEventLoopPolicy` before executing to avoid this issue.
+
 - **macOS / Linux:**
   ```bash
   .venv/bin/jupyter nbconvert --to notebook --execute notebook/ld_notebook.ipynb --output-dir notebook
