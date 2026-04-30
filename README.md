@@ -97,26 +97,26 @@ The given `.github/copilot-instructions.md` file set up the project for the **De
    cd path\to\DataLib_Copilot
    ```
 
-2. If you are using the **Platform Session** or **Deployed ADS** connection type, update the `lseg-data.config.json` content in the **Part 1** section of `.github/copilot-instructions.md` file to match your connection type (see the [What If I Am Using the Platform Session Or Deployed ADS?](#what-if-i-am-using-the-platform-session-or-deployed-ads) section below). **Please do not input your credential to the `.github/copilot-instructions.md` file**.
+2. If you are using the **Platform Session** or **Deployed ADS** connection type, update the `lseg-data.config.json` template content in the **Part 1** section of `.github/copilot-instructions.md` file to match your connection type (see the [What If I Am Using the Platform Session Or Deployed ADS?](#what-if-i-am-using-the-platform-session-or-deployed-ads) section below). **Please do not input your credential to the `.github/copilot-instructions.md` file**.
 
 
 3. **Start GitHub Copilot CLI** in the project directory (*using Powershell is recommended*) or **Open GitHub Copilot Chat** session.
    
-   *GitHub Copilot Chat* example.
+   GitHub Copilot Chat example.
 
    ![GitHub Copilot Chat opened](images/01_openchat.png)
 
-   *Copilot CLI* example.
+   Copilot CLI example.
 
    ![Copilot CLI opened](images/02_opencli.png)
 
 4. Select a Copilot model that suits your need.
 
-   *GitHub Copilot Chat* example
+   GitHub Copilot Chat example
 
    ![GitHub Copilot Chat select model](images/03_copilotchat_model.png)
 
-   *Copilot CLI* examples
+   Copilot CLI examples
 
    ![Copilot CLI select model](images/04_opencli_model.png)
 
@@ -134,11 +134,11 @@ The given `.github/copilot-instructions.md` file set up the project for the **De
 
 6. Review each Copilot request step **with caution**. Different models and run times may prompt you for request messages differently — click Approve/Allow only when you are satisfied the action is appropriate to proceed.
 
-   *GitHub Copilot Chat* example
+   GitHub Copilot Chat example
 
    ![GitHCopilot Chat action request](images/07_copilotchat_process.png)
 
-   *Copilot CLI* example
+   Copilot CLI example
 
    ![Copilot CLI action request](images/08_copilotcli_process.png)
 
@@ -152,23 +152,29 @@ The given `.github/copilot-instructions.md` file set up the project for the **De
 
 7. Once the process is completed, you see the following kind of message from Copilot that it has finished all tasks.
 
-   *GitHub Copilot Chat* example
+   GitHub Copilot Chat example
 
    ![GitHCopilot Chat action completed](images/09_githubchat_complete.png)
 
-   *Copilot CLI* example
+   Copilot CLI example
    
    ![Copilot CLI action completed](images/10_copilotcli_complete.png)
 
 8. Please note that sometimes Copilot may skip steps or become idle while running tasks; if this happens, send another prompt to make it continues tasks.
 
-   ![copilot skip step](images/11_askpromptback.png)
+   GitHub Copilot Chat example
+
+   ![copilot chat skip step](images/11_askpromptback.png)
+   
+   Copilot CLI example
+
+   ![copilot clit skip step](images/12_askpromptback2.png)
 
 9. You see the following project structure when the process is finished.
 
-   ![project complete 1](images/12_complete_project.png)
+   ![project complete 1](images/13_complete_project.png)
 
-   ![project complete 2](images/13_complete_project2.png)
+   ![project complete 2](images/14_complete_project2.png)
 
 ---
 
@@ -176,25 +182,25 @@ The given `.github/copilot-instructions.md` file set up the project for the **De
 
 After the automated setup finishes, review these project-specific items before you publish or reuse the repository:
 
-1. Run the notebook `ld_notebook.ipynb` to verify your connection and permission.
-2. Add the correct copyright owner and year to `LICENSE.md` if you want to include a project-specific notice.
+1. Start and login the Workspace Desktop application, or configure the `notebook\lseg-data.config.json` with your Data Platform/Deployed RTDS credential and information.
+2. Run the notebook `ld_notebook.ipynb` to verify your connection and permission.
+3. Add the correct copyright owner and year to `LICENSE.md` if you want to include a project-specific notice.
 
-  ![update project LICENSE.md](images/14_complete_project4.png)
+   ![update project LICENSE.md](images/15_complete_project4.png)
 
-
-3. Update this `README.md` so the title, overview, setup notes, and session guidance match your actual project.
-4. Update the `images` folder to match your project/repository images.
-5. Mange the Git repository based on your preference (create new branch, etc.).
-6. Start coding!!
+4. Update this `README.md` so the title, overview, setup notes, and session guidance match your actual project.
+5. Update the `images` folder to match your project/repository images.
+6. Mange the Git repository based on your preference (create new branch, etc.).
+7. Start coding!!
 
 
 ---
 
 ## What If I Am Using the Platform Session Or Deployed ADS?
 
-If you are using the **Platform Session**, you can configure a `notebook/lseg-data.config.json` based on the type of your connection type and update the `notebook/lseg-data.config.json` content in `.github\copilot-instructions.md` markdown file.
+If you are using the **Platform Session**, you can configure a `notebook/lseg-data.config.json` file template based on the type of your connection type and update the `notebook/lseg-data.config.json` content in `.github\copilot-instructions.md` markdown file.
 
-**Email-based or Machine-ID (GE-A-XXXXXXXX-X-XXXX)**
+**Machine-ID (GE-A-XXXXXXXX-X-XXXX)**
 
 ```json
 {
@@ -293,11 +299,6 @@ If you are using the **Platform Session**, you can configure a `notebook/lseg-da
 
 You can find more regarding each connection type setting in the [Data Library Quickstart](https://developers.lseg.com/en/api-catalog/lseg-data-platform/lseg-data-library-for-python/quick-start#) page.
 
-Then update **Part 3** of the `.github\copilot-instructions.md` file on this part to match your Session/Connection Type.
-
-```markdown
-> **Assuming the LSEG Workspace is running and signed in, run the following commands from the workspace root to execute the notebook non-interactively and save outputs back into `ld_notebook.ipynb`.**
-```
 ---
 
 ## License
