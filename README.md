@@ -61,6 +61,28 @@ You can find more regarding each connection type setting in the [Data Library Qu
 
 ---
 
+## Generated Project Structure
+
+```
+DataLib_Copilot/
+├── .github/
+│   └── copilot-instructions.md   # Copilot setup guide (for VS Code Copilot Chat and Copilot CLI)
+├── .vscode/
+│   └── settings.json             # VS Code setting
+├── .venv/                        # Python virtual environment (git-ignored)
+├── notebook/
+│   ├── ld_notebook.ipynb         # Example Data Library for Python JupyterLab notebook
+│   └── lseg-data.config.json     # LSEG Data Library configuration file
+├── .gitignore
+├── LICENSE.md                    # Apache 2.0
+├── Project_README.md             # Example Project's README file
+├── README.md                     # README for "this Repository"
+├── images/                       # "this Repository" images folder
+└── requirements.txt
+```
+
+---
+
 ## Setting Up with GitHub Copilot
 
 This project includes a [`.github/copilot-instructions.md`](./.github/copilot-instructions.md) file for  both GitHub Copilot Chat extension for VS Code and Copilot CLI that tells Copilot how to set up the entire project automatically.
@@ -75,7 +97,8 @@ The given `.github/copilot-instructions.md` file set up the project for the **De
    cd path\to\DataLib_Copilot
    ```
 
-2. If you are using the **Platform Session** or **Deployed ADS** connection type, update the `lseg-data.config.json` content in the **Part 1** section of `.github/copilot-instructions.md` to match your connection type (see the [What If I Am Using the Platform Session Or Deployed ADS?](#what-if-i-am-using-the-platform-session-or-deployed-ads) section below).
+2. If you are using the **Platform Session** or **Deployed ADS** connection type, update the `lseg-data.config.json` content in the **Part 1** section of `.github/copilot-instructions.md` file to match your connection type (see the [What If I Am Using the Platform Session Or Deployed ADS?](#what-if-i-am-using-the-platform-session-or-deployed-ads) section below). **Please do not input your credential to the `.github/copilot-instructions.md` file**.
+
 
 3. **Start GitHub Copilot CLI** in the project directory (*using Powershell is recommended*) or **Open GitHub Copilot Chat** session.
    
@@ -153,37 +176,17 @@ The given `.github/copilot-instructions.md` file set up the project for the **De
 
 After the automated setup finishes, review these project-specific items before you publish or reuse the repository:
 
-1. Add the correct copyright owner and year to `LICENSE.md` if you want to include a project-specific notice.
+1. Run the notebook `ld_notebook.ipynb` to verify your connection and permission.
+2. Add the correct copyright owner and year to `LICENSE.md` if you want to include a project-specific notice.
 
   ![update project LICENSE.md](images/14_complete_project4.png)
 
 
-2. Update this `README.md` so the title, overview, setup notes, and session guidance match your actual project.
-3. Update the `images` folder to match your project/repository images.
-4. Mange the Git repository based on your preference (create new branch, etc.).
-5. Start coding!!
+3. Update this `README.md` so the title, overview, setup notes, and session guidance match your actual project.
+4. Update the `images` folder to match your project/repository images.
+5. Mange the Git repository based on your preference (create new branch, etc.).
+6. Start coding!!
 
----
-
-## Project Structure
-
-```
-DataLib_Copilot/
-├── .github/
-│   └── copilot-instructions.md   # Copilot setup guide (for VS Code Copilot Chat and Copilot CLI)
-├── .vscode/
-│   └── settings.json             # VS Code setting
-├── .venv/                        # Python virtual environment (git-ignored)
-├── notebook/
-│   ├── ld_notebook.ipynb         # Example Data Library for Python JupyterLab notebook
-│   └── lseg-data.config.json     # LSEG Data Library configuration file
-├── .gitignore
-├── LICENSE.md                    # Apache 2.0
-├── Project_README.md             # Example Project's README file
-├── README.md                     # README for "this Repository"
-├── images/                       # "this Repository" images folder
-└── requirements.txt
-```
 
 ---
 

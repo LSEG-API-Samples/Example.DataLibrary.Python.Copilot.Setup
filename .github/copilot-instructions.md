@@ -159,41 +159,11 @@ Open `notebook/ld_notebook.ipynb` in JupyterLab and run the following cells in o
    ld.get_data(universe = ['/EUR=','/JPY='], fields = ['BID','ASK'])
    ```
 
----
-
-## Part 3: Execute the Notebook
-
-> **Assuming the LSEG Workspace is running and signed in, run the following commands from the workspace root to execute the notebook non-interactively and save outputs back into `ld_notebook.ipynb`.**
-
-Run all cells in `notebook/ld_notebook.ipynb` non-interactively using `jupyter nbconvert`:
-
-- **Windows (PowerShell/CMD):**
-  ```powershell
-  python -c "import asyncio; asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy()); from nbconvert.preprocessors import ExecutePreprocessor; import nbformat; nb = nbformat.read('notebook/ld_notebook.ipynb', as_version=4); ep = ExecutePreprocessor(timeout=120, kernel_name='python3'); ep.preprocess(nb, {'metadata': {'path': 'notebook/'}}); nbformat.write(nb, 'notebook/ld_notebook.ipynb')"
-  ```
-  > **Note:** On Windows, running `jupyter.exe nbconvert --execute` directly can corrupt notebook output due to the default `ProactorEventLoop`. The command above switches to `WindowsSelectorEventLoopPolicy` before executing to avoid this issue.
-
-- **macOS / Linux:**
-  ```bash
-  .venv/bin/jupyter nbconvert --to notebook --execute notebook/ld_notebook.ipynb --output-dir notebook
-  ```
-
-This executes all cells in order and saves the output back into `ld_notebook.ipynb`.
-
-To verify the output was saved:
-
-- **Windows (PowerShell/CMD):**
-  ```powershell
-  python -c "import json,pathlib; nb=json.loads(pathlib.Path('notebook/ld_notebook.ipynb').read_text(encoding='utf-8')); print('outputs:', [len(c['outputs']) for c in nb['cells']])"
-  ```
-- **macOS / Linux:**
-  ```bash
-  python3 -c "import json,pathlib; nb=json.loads(pathlib.Path('notebook/ld_notebook.ipynb').read_text(encoding='utf-8')); print('outputs:', [len(c['outputs']) for c in nb['cells']])"
-  ```
+4. Do not need to run the notebook cells. Developers can run them by themselves to verify the setup is working. 
 
 ---
 
-## Part 4: Create a Project Setup Branch
+## Part 3: Create a Project Setup Branch
 
 > **Prerequisite:** The Part 3 must be completed and the notebook should have outputs saved back into `ld_notebook.ipynb` before proceeding with these steps.
 
