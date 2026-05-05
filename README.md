@@ -42,6 +42,16 @@ GitHub Copilot CLI gives you quick access to a powerful AI agent, without having
 
 ---
 
+## What is the .github/copilot-instructions.md File?
+
+The [`.github/copilot-instructions.md`](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions) file is a project guide that helps both developers and GitHub Copilot understand how the project is structured and how to work with it.
+
+It can cover things like coding style, naming conventions, folder structure, required tools, setup steps, and how to run or test the code. Having this in one place makes it easier for new team members and beginners to get started without having to guess or ask for help.
+
+The equivalent files for other AI tools are [GEMINI.md](https://geminicli.com/docs/cli/gemini-md/) for Gemini CLI and [CLAUDE.md](https://code.claude.com/docs/en/best-practices#write-an-effective-claude-md) for Claude.
+
+---
+
 ## Prerequisites
 
 Before you begin, ensure the following are installed and available on your `PATH`:
@@ -334,6 +344,25 @@ By combining GitHub Copilot's agentic capabilities with a structured instruction
 
 ---
 
+## Next Steps
+
+The `.github/copilot-instructions.md` file is not limited to automating project setup. It can also capture project-specific information such as:
+
+- coding style, naming conventions, and project structure
+- how to build, run, and test the code
+- how to deploy the project
+- repository workflow and branching conventions
+
+Keeping this information in one place helps all project members follow the same process consistently. It also gives GitHub Copilot the context it needs to assist you more effectively with day-to-day coding tasks. Check the following resources to learn more about the power and benefits of the `.github/copilot-instructions.md` file:
+
+- [Adding repository custom instructions for GitHub Copilot](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions)
+- [Use custom instructions in VS Code](https://code.visualstudio.com/docs/copilot/customization/custom-instructions)
+- [Adding custom instructions for GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-custom-instructions)
+- [VS Code: Use a .github/copilot-instructions.md file](https://code.visualstudio.com/docs/copilot/customization/custom-instructions#_use-a-githubcopilotinstructionsmd-file)
+- [Customizing GitHub Copilot in Visual Studio with Custom Instructions video tutorial](https://www.youtube.com/watch?v=BdZWFlFiHHY)
+
+---
+
 ## Reference
 
 You can find more detail regarding the Data Library and GitHub Copilot from the following resources:
@@ -347,5 +376,8 @@ You can find more detail regarding the Data Library and GitHub Copilot from the 
 - [GitHub Copilot documentation](https://docs.github.com/en/copilot).
 - [Adding custom instructions for GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-custom-instructions).
 - [Adding repository custom instructions for GitHub Copilot](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions?tool=vscode).
+- [Use custom instructions in VS Code](https://code.visualstudio.com/docs/copilot/customization/custom-instructions).
+- [VS Code: Use a .github/copilot-instructions.md file](https://code.visualstudio.com/docs/copilot/customization/custom-instructions#_use-a-githubcopilotinstructionsmd-file).
+- [Customizing GitHub Copilot in Visual Studio with Custom Instructions video tutorial](https://www.youtube.com/watch?v=BdZWFlFiHHY).
 
 For any question related to this example or Data Library, please use the Developers Community [Q&A Forum](https://community.developers.refinitiv.com).
