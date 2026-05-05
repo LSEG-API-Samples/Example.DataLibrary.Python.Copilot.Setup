@@ -1,7 +1,7 @@
 # Automated LSEG Data Library Jupyter Notebook Setup with GitHub Copilot
 
 - Version: 1.0
-- Last update: Apr 2026
+- Last update: May 2026
 - Environment: Python + Git + Copilot
 
 ## Overview
@@ -44,7 +44,7 @@ GitHub Copilot CLI gives you quick access to a powerful AI agent, without having
 
 ## What is the .github/copilot-instructions.md File?
 
-The [`.github/copilot-instructions.md`](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions) file is a project guide that helps both developers and GitHub Copilot understand how the project is structured and how to work with it.
+The [`.github/copilot-instructions.md`](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions) file is a project guide that helps both developers and GitHub Copilot understand how the project is structured and how to work with it. The file is a text based in a [Markdown](https://www.markdownguide.org/) format.
 
 It can cover things like coding style, naming conventions, folder structure, required tools, setup steps, and how to run or test the code. Having this in one place makes it easier for new team members and beginners to get started without having to guess or ask for help.
 
