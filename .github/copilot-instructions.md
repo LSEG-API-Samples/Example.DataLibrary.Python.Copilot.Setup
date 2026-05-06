@@ -22,11 +22,12 @@ Before running setup commands, confirm the project structure should match this l
 /
 ├── .github/
 │   └── copilot-instructions.md
+├── .vscode/
+│   └── settings.json
 ├── .gitignore
 ├── LICENSE.md
 ├── Project_README.md
 ├── README.md (for the repository)
-├── Article.md (for the repository)
 ├── images/
 ├── requirements.txt
 ├── .venv/
@@ -125,7 +126,15 @@ Notes:
      python3 -m pip freeze > requirements.txt
      ```
 
-6. Create the following file and folder structure under the project root:
+6. Create `.vscode/settings.json` with the following content:
+
+   ```json
+   {
+     "git.ignoreLimitWarning": true
+   }
+   ```
+
+7. Create the following file and folder structure under the project root:
 
    ```
    notebook/
@@ -133,7 +142,7 @@ Notes:
    └── lseg-data.config.json
    ```
 
-7. Create `lseg-data.config.json` inside `notebook` with the following content:
+8. Create `lseg-data.config.json` inside `notebook` with the following content:
 
    ```json
    {
@@ -182,7 +191,7 @@ Open `notebook/ld_notebook.ipynb` in JupyterLab and run the following cells in o
 
 ## Part 4: Finish a Project Setup Branch
 
-> **Prerequisite:** The Part 3 must be completed and the notebook should have outputs saved back into `ld_notebook.ipynb` before proceeding with these steps.
+> **Prerequisite:** Part 3 must be completed by adding the required notebook cells to `ld_notebook.ipynb`. Running the notebook cells and saving outputs is optional and can be done later by developers.
 
 1. Ensure that the git branch is `setup-project`:
 
