@@ -77,8 +77,6 @@ You can find more regarding each connection type setting in the [Data Library Qu
 DataLib_Copilot/
 ├── .github/
 │   └── copilot-instructions.md   # Copilot setup guide (for VS Code Copilot Chat and Copilot CLI)
-├── .vscode/
-│   └── settings.json             # VS Code setting
 ├── .venv/                        # Python virtual environment (git-ignored)
 ├── notebook/
 │   ├── ld_notebook.ipynb         # Example Data Library for Python JupyterLab notebook
