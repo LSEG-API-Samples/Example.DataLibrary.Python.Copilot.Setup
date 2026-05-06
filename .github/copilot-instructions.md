@@ -42,7 +42,33 @@ Notes:
 
 ---
 
-## Part 1: Set Up the Python Virtual Environment
+## Part 1: Create a Project Setup Branch
+
+1. Verify that the current branch is `main`:
+
+   ```bash
+   git branch --show-current
+   ```
+
+   If the command does not return `main`, switch to `main` before continuing.
+
+2. Check out a new git branch named `setup-project`:
+
+   ```bash
+   git checkout -b setup-project
+   ```
+
+3. Add a `Project_README.md` with `# Data Library Jupyter Notebook` title.
+
+4. Add a `.gitignore` file suitable for Python projects (e.g., from [gitignore.io](https://www.toptal.com/developers/gitignore/api/python)).
+
+5. Add the `.venv/` virtual environment folder to `.gitignore`.
+
+---
+
+## Part 2: Set Up the Python Virtual Environment
+
+> **Prerequisite:** The Part 1 must be completed and the git branch must be on `setup-project` branch before proceeding with these steps.
 
 1. Create a virtual environment named `.venv` inside the workspace root:
 
@@ -137,7 +163,7 @@ Notes:
 
 ---
 
-## Part 2: Notebook Code
+## Part 3: Notebook Code
 
 Open `notebook/ld_notebook.ipynb` in JupyterLab and run the following cells in order.
 
@@ -163,31 +189,26 @@ Open `notebook/ld_notebook.ipynb` in JupyterLab and run the following cells in o
 
 ---
 
-## Part 3: Create a Project Setup Branch
+## Part 4: Finish a Project Setup Branch
 
 > **Prerequisite:** The Part 3 must be completed and the notebook should have outputs saved back into `ld_notebook.ipynb` before proceeding with these steps.
 
-1. Add a `Project_README.md` with `# Data Library Jupyter Notebook` title.
-
-2. Add a `.gitignore` file suitable for Python projects (e.g., from [gitignore.io](https://www.toptal.com/developers/gitignore/api/python)).
-
-3. Add the `.venv/` virtual environment folder to `.gitignore`.
-
-4. Verify that the current branch is `main`:
+1. Ensure that the git branch is `setup-project`:
 
    ```bash
    git branch --show-current
    ```
 
-   If the command does not return `main`, switch to `main` before continuing.
+   If the command does not return `setup-project`, switch to `setup-project` before continuing.
 
-5. Check out a new git branch named `setup-project`:
+2. Review the changes in the `setup-project` branch to confirm that all expected files are created and updated:
 
    ```bash
-   git checkout -b setup-project
-   ```
+   git status
+   git diff
+   ```  
 
-6. Stage all files and create a commit on `setup-project`:
+3. Stage all files and create a commit on `setup-project`:
 
    ```bash
    git add .

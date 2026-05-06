@@ -78,17 +78,17 @@ Together, these two sections anchor the entire setup. They tell Copilot where it
 
 That’s all I have to say about the project structure.
 
-### Part 1: Set Up the Python Virtual Environment
+### Set Up the Python Virtual Environment and Project Directories
 
 Now we come to the first step of every Python project — setting up a Python virtual environment. A virtual environment keeps the project's dependencies isolated from your system Python, so installing or upgrading packages here will not affect other projects on your machine.
 
 This guide demonstrates with the built-in [venv](https://docs.python.org/3/library/venv.html) module, but you can adapt the instructions in `.github/copilot-instructions.md` to use [Anaconda](https://www.anaconda.com/)/[Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main), [virtualenv](https://virtualenv.pypa.io/en/latest/), [Pipenv](https://pipenv.pypa.io/en/latest/), or [Poetry](https://python-poetry.org/) depending on your team's preference.
 
-Once the virtual environment is created and activated, the remaining steps in this part cover: upgrading `pip` to the latest version, installing the [LSEG Data Library for Python](https://pypi.org/project/lseg-data/) and [JupyterLab](https://pypi.org/project/jupyterlab/), saving the installed dependencies list and versions to `requirements.txt`, creating a [VS Code settings](https://code.visualstudio.com/docs/configure/settings) file, and finally creating the notebook file alongside its library configuration file.
+Once the virtual environment is created and activated, the remaining steps in this part cover: upgrading `pip` to the latest version, installing the [LSEG Data Library for Python](https://pypi.org/project/lseg-data/) and [JupyterLab](https://pypi.org/project/jupyterlab/), saving the installed dependencies list and versions to `requirements.txt`, creating a [VS Code settings](https://code.visualstudio.com/docs/configure/settings) file, and finally creating an empty notebook file (without code yet) alongside its library configuration file.
 
 
 ````markdown
-## Part 1: Set Up the Python Virtual Environment
+## Part 1: Set Up the Python Virtual Environment and Project Directories
 
 1. Create a virtual environment named `.venv` inside the workspace root:
 
@@ -199,4 +199,41 @@ After asking Copilot to review the instructions and suggest improvements, the fe
 
 This is the key lesson when writing a `copilot-instructions.md` file — treat it less like a quick checklist and more like a precise runbook where nothing is left to interpretation.
 
-[TBD]
+Please note that the `Part 1` step is based on the Data Library 's Desktop Session in mind. If you are using the Platform Session (whether Data Platform or Deployed RTDS), please change the `lseg-data.config.json` template based on your connection. See [Data Library Quickstart](https://developers.lseg.com/en/api-catalog/lseg-data-platform/lseg-data-library-for-python/quick-start) page for more detail.
+
+ - **Note**: **Do not** input your credential into a `copilot-instructions.md` file.
+
+That covers the environment and project folder set up.
+
+### Initial Basic Notebook Code.
+
+Moving on to the Jupyter notebook `ld_notebook.ipynb` file. This step add some basic Data Library for Python code for verification purpose.
+
+````markdown
+## Part 2: Notebook Code
+
+Open `notebook/ld_notebook.ipynb` in JupyterLab and run the following cells in order.
+
+1. **Import the library:**
+
+   ```python
+   import lseg.data as ld
+   ```
+
+2. **Open a session (connects to LSEG Workspace):**
+
+   ```python
+   ld.open_session()
+   ```
+
+3. **Retrieve market data** (BID/ASK for EUR and JPY):
+
+   ```python
+   ld.get_data(universe = ['/EUR=','/JPY='], fields = ['BID','ASK'])
+   ```
+
+4. Do not need to run the notebook cells. Developers can run them by themselves to verify the setup is working. 
+````
+
+Once this step is completed, you get a basic Jupyter notebook file with a simple Data Library code. You can configure your Workspace Desktop application or your Data Platform/Deployed RTDS setting, then run the notebook to verify your connection and permission.
+

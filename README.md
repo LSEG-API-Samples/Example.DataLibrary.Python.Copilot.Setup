@@ -85,9 +85,10 @@ DataLib_Copilot/
 │   └── lseg-data.config.json     # LSEG Data Library configuration file
 ├── .gitignore
 ├── LICENSE.md                    # Apache 2.0
-├── Project_README.md             # Example Project's README file
-├── README.md                     # README for "this Repository"
-├── images/                       # "this Repository" images folder
+├── Project_README.md             # Data LibraryExample Project's README file
+├── README.md                     # README for "this Repository", not related to the Data Library project
+├── Article.md                    # Article document for "this Repository" images folder, not related to the Data Library project
+├── images/                       # "this Repository" images folder, not related to the Data Library project
 └── requirements.txt
 ```
 
