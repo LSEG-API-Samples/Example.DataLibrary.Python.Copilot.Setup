@@ -416,12 +416,12 @@ That covers how to run a `copilot-instructions.md` file.
 
 After the automated setup finishes, review these project-specific items before you publish or reuse the repository:
 
-First, start and login the Workspace Desktop application, or configure the `notebook\lseg-data.config.json` with your Data Platform/Deployed RTDS credential and information. Then run the notebook `ld_notebook.ipynb` to verify your connection and permission.
+First, start and login the Workspace Desktop application, or configure the `notebook\lseg-data.config.json` file with your Data Platform/Deployed RTDS credential and information. Then run the notebook `ld_notebook.ipynb` file to verify your connection and permission.
 
 Secondly, update the copyright owner and year content of `LICENSE.md` file to match your organization.
 
 ![update project LICENSE.md](images/15_complete_project4.png)
 
-Thirdly, update the `README.md`, `Project_README.md`, `image` folder, and manage the Git branch to match your preference, then start coding!!!.
+Thirdly, update the `README.md` file, `Project_README.md` file , `image` folder, and manage the Git branch to match your preference, then start coding!!!.
 
 
