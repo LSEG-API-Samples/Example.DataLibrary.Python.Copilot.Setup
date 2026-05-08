@@ -337,7 +337,7 @@ To run this file, firstly open the project folder in a terminal or VS Code ([Pow
 cd path\to\project_folder
 ```
 
-Next, if you are using the **Platform Session** or **Deployed ADS** connection type, update the `lseg-data.config.json` template content in the **Part 1** section of `.github/copilot-instructions.md` file to match your connection type (see the [Data Library Quickstart](https://developers.lseg.com/en/api-catalog/lseg-data-platform/lseg-data-library-for-python/quick-start#) page). **Please do not input your credential to the `.github/copilot-instructions.md` file**.
+Next, if you are using the **Platform Session** or **Deployed ADS** connection type, update the `lseg-data.config.json` file template content in the **Part 1** section of `.github/copilot-instructions.md` file to match your connection type (see the [Data Library Quickstart](https://developers.lseg.com/en/api-catalog/lseg-data-platform/lseg-data-library-for-python/quick-start#) page). **Please do not input your credential to the `.github/copilot-instructions.md` file**.
 
 Then **start GitHub Copilot CLI** in the project directory (*using Powershell is recommended*) or **Open GitHub Copilot Chat** session.
    
