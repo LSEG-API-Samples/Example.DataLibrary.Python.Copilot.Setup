@@ -29,7 +29,7 @@ If you use a different model, review and revise `.github/copilot-instructions.md
 
 ## What is GitHub Copilot
 
-[GitHub Copilot](https://github.com/features/copilot) is an AI coding assistant that helps you write code faster and with less effort. Then, you can focus more energy on problem solving and collaboration. It supports multiple AI models. The GitHub Copilot integrates with your favorite IDE such as [VS Code](https://code.visualstudio.com/), [MS Visual Studio](https://visualstudio.microsoft.com/), [JetBrains IDEs family](https://www.jetbrains.com/), [Apple XCode](https://developer.apple.com/xcode/), [Eclipse](https://eclipseide.org/), etc. for the seamless workflow.
+Let’s start with what the GitHub Copilot is. [GitHub Copilot](https://github.com/features/copilot) is an AI coding assistant that helps you write code faster and with less effort. Then, you can focus more energy on problem solving and collaboration. It supports multiple AI models. The GitHub Copilot integrates with your favorite IDE such as [VS Code](https://code.visualstudio.com/), [MS Visual Studio](https://visualstudio.microsoft.com/), [JetBrains IDEs family](https://www.jetbrains.com/), [Apple XCode](https://developer.apple.com/xcode/), [Eclipse](https://eclipseide.org/), etc. for the seamless workflow.
 
 I am demonstrating with the VS Code and the [GitHub Copilot Chat extension for VS Code](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) extension.
 
@@ -37,15 +37,17 @@ I am demonstrating with the VS Code and the [GitHub Copilot Chat extension for V
 
 ## What is Copilot CLI
 
-[Copilot CLI](https://github.com/features/copilot/cli) is a command line interface tool allows you to use the Copilot directly from your terminal. You can use it to answer questions, write and debug code, and interact with GitHub.com. For example, you can ask Copilot to make some changes to a project and create a pull request.
+Now, what about Copilot CLI? [Copilot CLI](https://github.com/features/copilot/cli) is a command line interface tool allows you to use the Copilot directly from your terminal. You can use it to answer questions, write and debug code, and interact with GitHub.com. For example, you can ask Copilot to make some changes to a project and create a pull request.
 
 GitHub Copilot CLI gives you quick access to a powerful AI agent, without having to leave your terminal. It can help you complete tasks more quickly by working on your behalf, and you can work iteratively with GitHub Copilot CLI to build the code you need.
+
+That’s all I have to say about the GitHub Copilot and Copilot CLI.
 
 ---
 
 ## What is the .github/copilot-instructions.md File?
 
-The [`.github/copilot-instructions.md`](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions) file is a project guide that helps both developers and GitHub Copilot understand how the project is structured and how to work with it. The file is a text based in a [Markdown](https://www.markdownguide.org/) format.
+My next point is the Copilot instruction file. The [`.github/copilot-instructions.md`](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions) file is a project guide that helps both developers and GitHub Copilot understand how the project is structured and how to work with it. The file is a text based in a [Markdown](https://www.markdownguide.org/) format.
 
 It can cover things like coding style, naming conventions, folder structure, required tools, setup steps, and how to run or test the code. Having this in one place makes it easier for new team members and beginners to get started without having to guess or ask for help.
 
@@ -356,13 +358,7 @@ The `.github/copilot-instructions.md` file is not limited to automating project 
 - how to deploy the project
 - repository workflow and branching conventions
 
-Keeping this information in one place helps all project members follow the same process consistently. It also gives GitHub Copilot the context it needs to assist you more effectively with day-to-day coding tasks. Check the following resources to learn more about the power and benefits of the `.github/copilot-instructions.md` file:
-
-- [Adding repository custom instructions for GitHub Copilot](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions)
-- [Use custom instructions in VS Code](https://code.visualstudio.com/docs/copilot/customization/custom-instructions)
-- [Adding custom instructions for GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-custom-instructions)
-- [VS Code: Use a .github/copilot-instructions.md file](https://code.visualstudio.com/docs/copilot/customization/custom-instructions#_use-a-githubcopilotinstructionsmd-file)
-- [Customizing GitHub Copilot in Visual Studio with Custom Instructions video tutorial](https://www.youtube.com/watch?v=BdZWFlFiHHY)
+Keeping this information in one place helps all project members follow the same process consistently. It also gives GitHub Copilot the context it needs to assist you more effectively with day-to-day coding tasks. Check the resources on the **Reference** section to learn more about the power and benefits of the `.github/copilot-instructions.md` file.
 
 ---
 
