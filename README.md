@@ -21,8 +21,9 @@ This project and the `.github/copilot-instructions.md` file were tested on Windo
 - **Claude Sonnet 4.6**: Both Chat Extensions and Copilot CLI
 - **Claude Opus 4.6**: Both Chat Extensions and Copilot CLI
 - **GPT-5.4**: Both Chat Extensions and Copilot CLI
+- **GPT-5.3-Codex**: Both Chat Extensions and Copilot CLI
 
-If you use a different model, ask it to review and revise `.github/copilot-instructions.md` file *with your review*, then retest the instructions until it satisfies your requirements.
+If you use a different model, review and revise `.github/copilot-instructions.md` file with your selected model *and your review*, then retest the instructions until it satisfies your requirements.
 
 --- 
 
@@ -100,13 +101,13 @@ The given `.github/copilot-instructions.md` file set up the project for the **De
 
 ### Steps
 
-1. Open the project folder in a terminal or VS Code:
+1. Open the project folder in a terminal or VS Code ([PowerShell](https://github.com/powershell/powershell) is preferred on Windows):
 
    ```powershell
-   cd path\to\DataLib_Copilot
+   cd path\to\project_folder
    ```
 
-2. If you are using the **Platform Session** or **Deployed ADS** connection type, update the `lseg-data.config.json` template content in the **Part 1** section of `.github/copilot-instructions.md` file to match your connection type (see the [What If I Am Using the Platform Session Or Deployed ADS?](#what-if-i-am-using-the-platform-session-or-deployed-ads) section below). **Please do not input your credential to the `.github/copilot-instructions.md` file**.
+2. If you are using the **Platform Session** or **Deployed ADS** connection type, update the `lseg-data.config.json` template content in the **Part 2** section of `.github/copilot-instructions.md` file to match your connection type (see the [What If I Am Using the Platform Session Or Deployed ADS?](#what-if-i-am-using-the-platform-session-or-deployed-ads) section below). **Please do not input your credential to the `.github/copilot-instructions.md` file**.
 
 
 3. **Start GitHub Copilot CLI** in the project directory (*using Powershell is recommended*) or **Open GitHub Copilot Chat** session.
@@ -137,7 +138,7 @@ The given `.github/copilot-instructions.md` file set up the project for the **De
    run all tasks in my copilot-instructions.md file
    ```
 
-   *GitHub Copilot Chat* examples
+   GitHub Copilot Chat examples
 
    ![GitHub Copilot Chat](images/06_copilotchat_prompt.png)
 
@@ -151,6 +152,8 @@ The given `.github/copilot-instructions.md` file set up the project for the **De
 
    ![Copilot CLI action request](images/08_copilotcli_process.png)
 
+   ![Copilot CLI action request](images/08_copilotcli_process_2.png)
+
     Copilot then performs the following tasks based on the `.github\copilot-instructions.md` markdown file:
     - Create a `.venv` Python virtual environment
     - Upgrade `pip` and install `lseg-data` + `jupyterlab`
@@ -159,25 +162,26 @@ The given `.github/copilot-instructions.md` file set up the project for the **De
     - Add `README.md`, and `.gitignore` files
     - Create a new Git branch named `setup-project`, then stage and commit all files to it
 
-7. Once the process is completed, you see the following kind of message from Copilot that it has finished all tasks.
+7. Please note that sometimes Copilot may skip steps or become idle while running tasks; if this happens, send another prompt to make it continues tasks.
 
    GitHub Copilot Chat example
 
-   ![GitHCopilot Chat action completed](images/09_githubchat_complete.png)
-
-   Copilot CLI example
+   ![copilot chat skip step](images/09_askpromptback.png)
    
-   ![Copilot CLI action completed](images/10_copilotcli_complete.png)
+   Copilot CLI example
 
-8. Please note that sometimes Copilot may skip steps or become idle while running tasks; if this happens, send another prompt to make it continues tasks.
+   ![copilot clit skip step](images/10_askpromptback2.png)
+
+
+8. Once the process is completed, you see the following kind of message from Copilot that it has finished all tasks.
 
    GitHub Copilot Chat example
 
-   ![copilot chat skip step](images/11_askpromptback.png)
-   
-   Copilot CLI example
+   ![GitHCopilot Chat action completed](images/11_githubchat_complete.png)
 
-   ![copilot clit skip step](images/12_askpromptback2.png)
+   Copilot CLI example
+   
+   ![Copilot CLI action completed](images/12_copilotcli_complete.png)
 
 9. You see the following project structure when the process is finished.
 
@@ -197,7 +201,7 @@ After the automated setup finishes, review these project-specific items before y
 
    ![update project LICENSE.md](images/15_complete_project4.png)
 
-4. Update this `README.md` so the title, overview, setup notes, and session guidance match your actual project.
+4. Update the `README.md` and `Project_README.md` files so the title, overview, setup notes, and session guidance match your actual project.
 5. Update the `images` folder to match your project/repository images.
 6. Mange the Git repository based on your preference (create new branch, etc.).
 7. Start coding!!
