@@ -1,4 +1,4 @@
-# Automated LSEG Data Library Jupyter Notebook Setup with GitHub Copilot
+# Automated LSEG Data Library For Python Jupyter Notebook Setup with GitHub Copilot
 
 - Version: 1.0
 - Last update: May 2026
