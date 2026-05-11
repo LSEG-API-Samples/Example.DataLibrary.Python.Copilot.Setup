@@ -166,13 +166,10 @@ The given `.github/copilot-instructions.md` file set up the project for the **De
 
 7. Please note that sometimes Copilot may skip steps or become idle while running tasks; if this happens, send another prompt to make it continues tasks.
 
-   GitHub Copilot Chat example
-
-   ![copilot chat skip step](images/09_askpromptback.png)
+   ![copilot cli skip step](images/09_askpromptback.png)
    
-   Copilot CLI example
 
-   ![copilot clit skip step](images/10_askpromptback2.png)
+   ![copilot chat skip step](images/10_askpromptback2.png)
 
 
 8. Once the process is completed, you see the following kind of message from Copilot that it has finished all tasks.
