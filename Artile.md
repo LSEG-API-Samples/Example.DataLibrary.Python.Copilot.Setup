@@ -127,7 +127,7 @@ Once the virtual environment is created and activated, the remaining steps in th
 ````markdown
 ## Part 2: Set Up the Python Virtual Environment
 
-1. Create a virtual environment named `.venv` inside the workspace root:
+1. Create a virtual environment named `.venv` inside the workspace root (same command on all platforms):
 
    ```bash
    python -m venv .venv
@@ -183,15 +183,7 @@ Once the virtual environment is created and activated, the remaining steps in th
      python3 -m pip freeze > requirements.txt
      ```
 
-6. Create `.vscode/settings.json` with the following content:
-
-   ```json
-   {
-     "git.ignoreLimitWarning": true
-   }
-   ```
-
-7. Create the following file and folder structure under the project root:
+6. Create the following file and folder structure under the project root:
 
    ```
    notebook/
@@ -199,7 +191,7 @@ Once the virtual environment is created and activated, the remaining steps in th
    └── lseg-data.config.json
    ```
 
-8. Create `lseg-data.config.json` inside `notebook` with the following content:
+7. Create `lseg-data.config.json` inside `notebook` with the following content:
 
    ```json
    {
@@ -273,7 +265,7 @@ Open `notebook/ld_notebook.ipynb` in JupyterLab and run the following cells in o
    ld.get_data(universe = ['/EUR=','/JPY='], fields = ['BID','ASK'])
    ```
 
-4. Do not need to run the notebook cells. Developers can run them by themselves to verify the setup is working. 
+4. Do not execute the notebook cells. Copilot should only add the cells above to the notebook. Developers can run them by themselves to verify the setup is working.
 ````
 
 Once this step is completed, you get a basic Jupyter notebook file with a simple Data Library code. You can configure your Workspace Desktop application or your Data Platform/Deployed RTDS setting, then run the notebook to verify your connection and permission.

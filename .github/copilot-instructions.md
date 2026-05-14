@@ -68,7 +68,7 @@ Notes:
 
 > **Prerequisite:** The Part 1 must be completed and the git branch must be on `setup-project` branch before proceeding with these steps.
 
-1. Create a virtual environment named `.venv` inside the workspace root:
+1. Create a virtual environment named `.venv` inside the workspace root (same command on all platforms):
 
    ```bash
    python -m venv .venv
@@ -175,7 +175,7 @@ Open `notebook/ld_notebook.ipynb` in JupyterLab and run the following cells in o
    ld.get_data(universe = ['/EUR=','/JPY='], fields = ['BID','ASK'])
    ```
 
-4. Do not need to run the notebook cells. Developers can run them by themselves to verify the setup is working. 
+4. Do not execute the notebook cells. Copilot should only add the cells above to the notebook. Developers can run them by themselves to verify the setup is working.
 
 ---
 
