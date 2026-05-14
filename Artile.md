@@ -416,4 +416,28 @@ Secondly, update the copyright owner and year content of `LICENSE.md` file to ma
 
 Thirdly, update the `README.md` file, `Project_README.md` file , `image` folder, and manage the Git branch to match your preference, then start coding!!!.
 
+## What About A Plan Mode?
+
+The GitHub Copilot **Plan mode** helps you to create detailed implementation plans before executing them. This ensures that all requirements are considered and addressed before any changes are made. The plan agent does not make any code changes until the plan is reviewed and approved by you. 
+
+You can use the Plan mode to review and create a plan for the `.github/copilot-instructions.md` actions, review (or adjust) the plan, then command Copilot to execute the plan.
+
+The Plan mode is available in all GitHub Copilot supported environments such as VS Code Chat extension, Copilot CLI, etc. 
+
+[VS Code GitHub Copilot Chat: Plan mode](https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide#plan-mode) examples.
+
+![VS Code GitHub Copilot Chat: Plan mode](images/19_planmode_copilotchat_1.png)
+
+![VS Code GitHub Copilot Chat: Plan mode](images/20_planmode_copilotchat_2.png)
+
+![VS Code GitHub Copilot Chat: Plan mode](images/21_planmode_copilotchat_3.png)
+
+[GitHub Copilot CLI: Plan mode](https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/overview#use-plan-mode) examples.
+
+![Copilot CLI: Plan mode](images/22_planmode_cli_1.png)
+
+![Copilot CLI: Plan mode](images/23_planmode_cli_2.png)
+
+
+
 
